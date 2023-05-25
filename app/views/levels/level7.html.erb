@@ -1,0 +1,88 @@
+<style>
+.outer{
+    padding: 30px;
+}
+
+.section_8bit{
+  font-size: 19px;
+  width: 95%;
+  float: left;
+  border-left: 10px solid #f0eded;
+  border-right: 10px solid #f0eded;
+  position: absolute;
+  bottom: 70px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #000000;
+}
+ 
+.section_8bit .wrapper{
+  display: block;
+  color: #ffffff;
+  padding: 10px;
+  padding-left: 35px;
+  margin: -10px 0;
+  border-top: 10px solid #f0eded;
+  border-bottom: 10px solid #f0eded;
+}
+ 
+.section_8bit::before,
+.section_8bit::after,
+.section_8bit .wrapper::before,
+.section_8bit .wrapper::after{
+  content: '';
+  width: 10px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  background: #f0eded;
+}
+.section_8bit::before{ top: -5px; left: -5px; }
+.section_8bit::after{ top: -5px; right: -5px; }
+.section_8bit .wrapper::before{ bottom: -5px; left: -5px; }
+.section_8bit .wrapper::after{ bottom: -5px; right: -5px; }
+
+.button-arrow-right {
+  color: #000000;
+  position: absolute;
+  bottom: 51%;
+  box-sizing: border-box;
+  font-size: 100px;
+  text-decoration: none;
+  right: 20px;
+
+}
+
+.button-arrow-right:hover, .button-arrow-right:active{
+  color: #000000;
+  text-decoration: none;
+}
+
+.button-arrow-left {
+  color: #000000;
+  position: absolute;
+  bottom: 51%;
+  box-sizing: border-box;
+  font-size: 100px;
+  text-decoration: none;
+  left: 20px;
+
+}
+
+.button-arrow-left:hover, .button-arrow-left:active{
+  color: #000000;
+  text-decoration: none;
+}
+</style>
+<section class="outer">
+<section class="section_8bit">
+  <div class="wrapper">
+    <h1>Latvijas Universitāte</h1>
+    <p>Kā arī beidzot nonākam pie Latvijas Universitātes, kas arī ir noslēdzošais ceļa posms.</p>
+  </div>
+</section>
+
+<%= link_to ">", level6_path, method: :get, class: "button-arrow-right" %>
+<%= link_to "<", home_path, method: :get, class: "button-arrow-left" %>
+</section>
