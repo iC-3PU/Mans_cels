@@ -74,15 +74,23 @@
   color: #000000;
   text-decoration: none;
 }
-</style>
-<section class="outer">
-<section class="section_8bit">
-  <div class="wrapper">
-    <h1>Dzelzceļa stacija</h1>
-    <p>Nākamais posms šajā ceļā ir dzelzceļa stacija, kuru atveidoju līdzīgi kā pirmo ceļa posmu, taču ar vairāk dzeltenā, ar ko man arī šis ceļa posms saistās</p>
-  </div>
-</section>
 
-<%= link_to ">", level1_path, method: :get, class: "button-arrow-right" %>
-<%= link_to "<", level3_path, method: :get, class: "button-arrow-left" %>
-</section>
+#container{
+  height: 940px;
+  width: 1610px;
+  background-image: url("Stacija.gif");
+}
+</style>
+<div id="container">
+<section class="outer">
+  <section class="section_8bit">
+    <div class="wrapper">
+      <h1>Dzelzceļa stacija</h1>
+      <p>Nākamais posms šajā ceļā ir dzelzceļa stacija, kuru atveidoju līdzīgi kā pirmo ceļa posmu, taču ar vairāk dzeltenā, ar ko man arī šis ceļa posms saistās</p>
+    </div>
+  </section>
+
+    <%= link_to ">", level1_path, method: :get, class: "button-arrow-right" %>
+    <%= link_to "<", level3_path, method: :get, class: "button-arrow-left" %>
+  </section>
+</div>

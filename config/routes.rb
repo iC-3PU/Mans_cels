@@ -5,7 +5,6 @@ Rails.application.routes.draw do
   get 'level3', to: 'levels#level3'
   get 'level4', to: 'levels#level4'
   get 'level5', to: 'levels#level5'
-  get 'level6', to: 'levels#level6'
   get 'level7', to: 'levels#level7'
   
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

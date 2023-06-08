@@ -74,15 +74,22 @@
   color: #000000;
   text-decoration: none;
 }
+#container{
+  height: 940px;
+  width: 1610px;
+  background-image: url("Cels_uz_Staciju.gif");
+}
 </style>
-<section class="outer">
-<section class="section_8bit">
-  <div class="wrapper">
-    <h1>Ceļš uz staciju</h1>
-    <p>Pirmais posms ir ceļš no mājām uz staciju, kas parasti mēdz būt no rīta, tāpēc var saskatīt daudz zilos un oranžos krāsu toņus</p>
-  </div>
-</section>
+<div id="container">
+  <section class="outer">
+  <section class="section_8bit">
+    <div class="wrapper">
+      <h1>Ceļš uz staciju</h1>
+      <p>Pirmais posms ir ceļš no mājām uz staciju, kas parasti mēdz būt no rīta.</p>
+    </div>
+  </section>
 
-<%= link_to ">", home_path, method: :get, class: "button-arrow-right" %>
-<%= link_to "<", level2_path, method: :get, class: "button-arrow-left" %>
-</section>
+  <%= link_to ">", home_path, method: :get, class: "button-arrow-right" %>
+  <%= link_to "<", level2_path, method: :get, class: "button-arrow-left" %>
+  </section>
+</div>

@@ -1,22 +1,31 @@
 
 <style>
-.title{
+#title{
   font-size: 29px;
+  color: #cce4f2;
   position: absolute;
   left: 23%;
-  bottom: 43%;
+  bottom: 42%;
   
 }
 
 .title-centering{
   font-size: 31px;
+  color: #cce4f2;
   position: absolute;
   left: 37%;
   bottom: 49%;
 }
 
+#container{
+  height: 940px;
+  width: 1610px;
+  background-image: url("Mans_cels_Home_1(2).gif");
+}
+
 #button{
-  
+  background-color: #cce4f2;
+  color: black;
   font-size: 29px;
   position: absolute;
   left: 50%;
@@ -27,15 +36,16 @@
 }
 
 </style>
-
+<div class="nes-container with-title is-centered" id="container">
   <div class="title-centering">
     <h1>Mans ceļš</h1>
   </div>
 
-  <div class="title">
+  <div id="title">
     <h2> uz Latvijas Universitāti <h2>
   </div>
 
   <div>
     <%=link_to "Sākt", level1_path, class: "nes-btn is-normal", id: "button"%>
   </div>
+</div>
