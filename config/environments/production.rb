@@ -10,7 +10,7 @@ Rails.application.configure do
 
 
   host = ENV['DEFAULT_URL_HOST'] || "#{ENV['HEROKU_APP_NAME']}.herokuapp.com"
-  protocol = config.force_ssl 'https' : 'http'
+  protocol = config.force_ssl ? 'https' : 'http'
   config.action_controller.default_url_options = {
     host: host,
     protocol: protocol
