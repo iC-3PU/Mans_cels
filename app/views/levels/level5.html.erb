@@ -6,11 +6,12 @@
 .section_8bit{
   font-size: 19px;
   width: 95%;
+  height: 15%;
   float: left;
   border-left: 10px solid #f0eded;
   border-right: 10px solid #f0eded;
   position: absolute;
-  bottom: 70px;
+  bottom: 4%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -80,14 +81,15 @@
   width: 100%;
   background-image: url("Dabas_Muzejs(1).png");
   background-size: cover;
+  overflow:auto;
 }
 </style>
 <div id="container">
 <section class="outer">
 <section class="section_8bit">
   <div class="wrapper">
-    <h1>Latvijas Nacionālais Dabas muzejs</h1>
-    <p> Ceļā uz Latvijas Universitāti, bieži vien eju garām Dabas muzejam, kuru arī mēdzu apmeklēt. </p>
+    <h1><%= t 'museum' %></h1>
+    <p> <%= t 'museum_desc' %> </p>
   </div>
 </section>
 

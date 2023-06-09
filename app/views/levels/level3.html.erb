@@ -6,15 +6,17 @@
 .section_8bit{
   font-size: 19px;
   width: 95%;
+  height: 15%;
   float: left;
   border-left: 10px solid #f0eded;
   border-right: 10px solid #f0eded;
   position: absolute;
-  bottom: 70px;
+  bottom: 4%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background: #000000;
+  overflow:auto;
 }
  
 .section_8bit .wrapper{
@@ -86,8 +88,8 @@
 <section class="outer">
 <section class="section_8bit">
   <div class="wrapper">
-    <h1>Brauciens ar vilcienu</h1>
-    <p> Paiet salīdzinoši neilgs laiks ceļojot no Olaines uz Rīgu, kas ir aptuveni 25 km. Pa šo laiku varu atpūsties un paskatīties pa logu. </p>
+    <h1><%= t 'ride' %></h1>
+    <p> <%= t 'ride_desc' %> </p>
   </div>
 </section>
 

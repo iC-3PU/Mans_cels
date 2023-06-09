@@ -33,21 +33,35 @@
   left: 50%;
   bottom: 32%;
   text-decoration: none;
-
-
 }
+
+#locale{
+  background-color: #cce4f2;
+  color: black;
+  font-size: 29px;
+  position: absolute;
+  left: 65%;
+  bottom: 32%;
+  text-decoration: none;
+}
+
 
 </style>
 <div class="nes-container with-title is-centered" id="container">
   <div class="title-centering">
-    <h1>Mans ceļš</h1>
+    <h1><%= t 'journey' %></h1>
   </div>
 
   <div id="title">
-    <h2> uz Latvijas Universitāti <h2>
+    <h2><%= t 'other_title' %><h2>
   </div>
 
   <div>
-    <%=link_to "Sākt", level1_path, class: "nes-btn is-normal", id: "button"%>
+    <%=link_to t('begin'), level1_path, class: "nes-btn is-normal", id: "button"%>
+    <% if I18n.locale == I18n.default_locale %>
+      <%=link_to t('locale_button'), home_path(:locale=> 'en'), class: "nes-btn is-normal", id: "locale"%>
+    <% else %>  
+      <%=link_to t('locale_button'), home_path(:locale=> 'lv'), class: "nes-btn is-normal", id: "locale"%>
+    <% end %>
   </div>
 </div>

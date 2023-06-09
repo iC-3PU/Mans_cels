@@ -6,15 +6,17 @@
 .section_8bit{
   font-size: 19px;
   width: 95%;
+  height: 15%;
   float: left;
   border-left: 10px solid #f0eded;
   border-right: 10px solid #f0eded;
   position: absolute;
-  bottom: 70px;
+  bottom: 4%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background: #000000;
+  overflow:auto;
 }
  
 .section_8bit .wrapper{
@@ -87,8 +89,8 @@
 <section class="outer">
   <section class="section_8bit">
     <div class="wrapper">
-      <h1>Dzelzceļa stacija</h1>
-      <p>Nākamais posms šajā ceļā ir dzelzceļa stacija, kuru atveidoju līdzīgi kā pirmo ceļa posmu, taču ar vairāk dzeltenā, ar ko man arī šis ceļa posms saistās</p>
+      <h1><%= t 'at_station' %></h1>
+      <p><%= t 'at_station_desc' %></p>
     </div>
   </section>
 
